@@ -70,7 +70,6 @@ module.exports = Generator.extend({
       this.props = props;
       this.name = props.name;
       this.id = "com.ionicframework." + this.name.toLowerCase() + (new Date().getTime().toString().substr(-6));
-      console.log("props", props)
     }.bind(this));
   },
 
@@ -152,6 +151,11 @@ module.exports = Generator.extend({
     this.fs.copy(
       this.templatePath('www/**/*'),
       this.destinationPath('www/')
+    );
+
+    this.fs.copy(
+      this.templatePath('plugins/**/*'),
+      this.destinationPath('plugins/')
     );
   },
 
