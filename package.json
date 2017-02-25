@@ -1,6 +1,6 @@
 {
   "name": "generator-ionic-1-ndjathe",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Side menu app base template",
   "homepage": "",
   "author": {
@@ -46,7 +46,7 @@
       "mocha": true
     }
   },
-  "repository": "ndjathe-master/generator-ionic-1-ndjathe",
+  "repository": "ndjathe-ndjathe/generator-ionic-1-ndjathe",
   "scripts": {
     "prepublish": "gulp prepublish",
     "test": "gulp"
